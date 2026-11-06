@@ -11,7 +11,7 @@ website:
         text: Learn
       - href: insights.qmd
         text: Insights
-      - href: metrics.qmd
+      - href: Metrics.qmd
         text: Metrics
       - href: about.qmd
         text: About
