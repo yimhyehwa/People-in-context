@@ -274,3 +274,310 @@ body:has(.pic-hero) #quarto-content main.content {
     margin-right: 12px;
   }
 }
+
+/* =========================================
+   9. About page
+   ========================================= */
+
+body:has(.pic-about) #title-block-header {
+  display: none;
+}
+
+.pic-about {
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 12px 0 64px;
+}
+
+.pic-about-intro {
+  padding: 24px 0 48px;
+  border-bottom: 1px solid var(--pic-line);
+}
+
+.pic-about-intro h1 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 2.5rem;
+  margin-bottom: 24px;
+}
+
+.pic-about-intro h3 {
+  font-size: 1.4rem;
+  font-weight: 650;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.pic-about-intro p {
+  color: var(--pic-muted);
+  max-width: 760px;
+}
+
+.pic-about > h2 {
+  margin-top: 64px;
+  margin-bottom: 24px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--pic-line);
+}
+
+.pic-about-cover {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.pic-about-card {
+  min-width: 0;
+  padding: 28px 24px;
+  border: 1px solid var(--pic-line);
+  border-radius: 4px;
+  background: var(--pic-white);
+}
+
+.pic-about-card h3 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.35rem;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.pic-about-card p {
+  color: var(--pic-text);
+  font-size: 0.94rem;
+  line-height: 1.85;
+  margin-bottom: 0;
+}
+
+.pic-about-editor {
+  padding: 32px 36px;
+  background: #f5f7f9;
+  border-left: 3px solid var(--pic-navy);
+}
+
+.pic-about-editor p {
+  margin-bottom: 18px;
+}
+
+.pic-about-editor p:last-child {
+  margin-bottom: 0;
+}
+
+.pic-about-principles {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 24px;
+}
+
+.pic-about-principle {
+  min-width: 0;
+  padding: 28px 26px;
+  border: 1px solid var(--pic-line);
+  border-radius: 4px;
+}
+
+.pic-about-principle h3 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.3rem;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.pic-about-principle p {
+  font-size: 0.94rem;
+  line-height: 1.85;
+}
+
+.pic-about-principle p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .pic-about {
+    padding-bottom: 36px;
+  }
+
+  .pic-about-intro {
+    padding: 16px 0 32px;
+  }
+
+  .pic-about-intro h1 {
+    font-size: 2rem;
+  }
+
+  .pic-about-intro h3 {
+    font-size: 1.2rem;
+  }
+
+  .pic-about > h2 {
+    margin-top: 44px;
+  }
+
+  .pic-about-cover,
+  .pic-about-principles {
+    grid-template-columns: 1fr;
+  }
+
+  .pic-about-card,
+  .pic-about-principle {
+    padding: 24px 22px;
+  }
+
+  .pic-about-editor {
+    padding: 24px 22px;
+  }
+}
+
+/* About section headings — unified navy */
+.pic-about > h2 {
+  color: #17283e;
+  font-weight: 700;
+}
+
+/* Individual article top spacing */
+body:not(:has(.pic-hero)):not(:has(.pic-about))
+#quarto-content main.content {
+  padding-top: 48px;
+}
+
+/* =========================================
+   10. Homepage hero — balanced Venn layout
+   ========================================= */
+
+.pic-hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  gap: 32px;
+  align-items: center;
+}
+
+.pic-hero-copy {
+  min-width: 0;
+}
+
+.pic-hero-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+}
+
+.pic-venn {
+  display: block;
+  width: 100%;
+  max-width: 270px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .pic-hero-layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .pic-hero-visual {
+    justify-content: center;
+  }
+
+  .pic-venn {
+    max-width: 220px;
+  }
+}
+
+/* 11. Homepage hero — visual refinement */
+
+.pic-hero {
+  padding: 52px 48px;
+}
+
+.pic-hero-layout {
+  grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr);
+  gap: 28px;
+}
+
+.pic-hero h1 {
+  font-size: clamp(1.65rem, 2.5vw, 2rem);
+  line-height: 1.45;
+  letter-spacing: -0.035em;
+  word-break: keep-all;
+}
+
+.pic-hero p {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  word-break: keep-all;
+}
+
+.pic-hero-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.11em;
+}
+
+.pic-venn {
+  max-width: 255px;
+}
+
+@media (max-width: 768px) {
+  .pic-hero {
+    padding: 36px 24px;
+  }
+
+  .pic-hero-layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .pic-hero h1 {
+    font-size: 1.65rem;
+  }
+
+  .pic-venn {
+    max-width: 220px;
+  }
+}
+
+/* =========================================
+   12. Homepage latest listing refinement
+   ========================================= */
+
+.pic-latest .quarto-listing-default .quarto-post {
+  display: block;
+  padding: 18px 0 22px;
+  border-bottom: 1px solid var(--pic-line);
+}
+
+.pic-latest .quarto-listing-default .quarto-post .thumbnail {
+  display: none !important;
+}
+
+.pic-latest .quarto-listing-default .quarto-post .body {
+  width: 100%;
+  max-width: 100%;
+  flex: 1 1 100%;
+}
+
+.pic-latest .quarto-listing-default .quarto-post .listing-title {
+  color: var(--pic-navy);
+  font-size: 1.15rem;
+  font-weight: 650;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.pic-latest .quarto-listing-default .quarto-post .listing-description {
+  color: var(--pic-muted);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-top: 10px;
+}
+
+.pic-latest .quarto-listing-default .quarto-post .listing-categories {
+  margin-top: 6px;
+}
+
+.pic-latest .quarto-listing-default .quarto-post .listing-category {
+  font-size: 0.72rem;
+  color: var(--pic-muted);
+  border: 1px solid var(--pic-line);
+  border-radius: 3px;
+  padding: 2px 7px;
+}
