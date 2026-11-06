@@ -1,0 +1,65 @@
+
+---
+title: "People in Context"
+title-block-style: none
+---
+
+::: {.pic-hero}
+::: {.pic-hero-label}
+PEOPLE IN CONTEXT · HR ANALYTICS JOURNAL
+:::
+
+# 분석의 시작은 데이터보다 질문에 있다
+
+데이터를 통해 사람과 조직을 이해하고, 연구와 실무를 연결하는 HR Analytics 저널입니다.
+:::
+
+::: {.pic-home-grid}
+
+::: {.pic-latest}
+
+## Latest from PiC
+
+::: {.pic-article}
+**INSIGHTS**
+
+### AI와 협업의 재구성
+
+해외 연구를 바탕으로 AI와 인간의 협업을 살펴보는 리뷰입니다.
+
+*게시글 연결 준비 중*
+:::
+
+:::
+
+::: {.pic-sidebar}
+
+## Explore PiC
+
+### Learn
+
+통계와 분석 방법론을 이해하기 위한 학습 콘텐츠
+
+[Learn 살펴보기](learn.qmd)
+
+### Insights
+
+해외 HR 연구를 읽고, 그 의미와 시사점을 탐색합니다.
+
+[Insights 살펴보기](insights.qmd)
+
+### Metrics
+
+HR 지표의 정의와 측정 기준을 살펴보는 가이드
+
+[Metrics 살펴보기](metrics.qmd)
+
+### About
+
+PiC가 데이터를 바라보는 관점과 운영 철학
+
+[About 살펴보기](about.qmd)
+
+:::
+
+:::

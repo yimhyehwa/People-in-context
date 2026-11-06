@@ -1,0 +1,28 @@
+project:
+  type: website
+
+website:
+  title: "People in Context"
+  navbar:
+    logo: pic-logo.svg
+    logo-alt: "piC - People in Context"
+    left:
+      - href: learn.qmd
+        text: Learn
+      - href: insights.qmd
+        text: Insights
+      - href: metrics.qmd
+        text: Metrics
+      - href: about.qmd
+        text: About
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: false
+    include-after-body: pic-logo.html
+    grid:
+      body-width: 1100px
+      margin-width: 0px
+      gutter-width: 24px

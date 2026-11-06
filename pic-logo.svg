@@ -1,0 +1,26 @@
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="340" height="70"
+     viewBox="0 0 340 70"
+     role="img"
+     aria-label="PiC People in Context HR Analytics Journal">
+  <text x="4" y="48"
+        font-family="Georgia, serif"
+        font-size="49"
+        font-weight="bold"
+        fill="#17283e">PiC</text>
+  <text x="88" y="48"
+        font-family="Georgia, serif"
+        font-size="49"
+        font-weight="bold"
+        fill="#7e95af">.</text>
+  <text x="114" y="30"
+        font-family="Georgia, serif"
+        font-size="22"
+        fill="#17283e">People in Context</text>
+  <text x="114" y="49"
+        font-family="Arial, sans-serif"
+        font-size="9"
+        letter-spacing="2.3"
+        fill="#7e95af">HR ANALYTICS JOURNAL</text>
+</svg>
