@@ -1,8 +1,7 @@
 
 ---
-title: "02. 데이터의 중심 경향"
-categories:
-  - Learn
+title: "데이터의 중심 경향"
+categories: ["LEARN", "중심경향", "평균", "중앙값", "최빈값"]
 description: "평균, 중앙값, 최빈값은 데이터의 중심을 어떻게 다르게 설명할까? 데이터의 분포와 측정 수준, 분석 목적에 따라 적절한 대표값을 선택하는 방법을 살펴본다."
 title-block-style: none
 ---

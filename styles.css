@@ -581,3 +581,11 @@ body:not(:has(.pic-hero)):not(:has(.pic-about))
   border-radius: 3px;
   padding: 2px 7px;
 }
+/* PiC homepage — primary menu category */
+.pic-latest .quarto-listing-default .quarto-post
+.listing-categories .listing-category:first-child {
+  background-color: #203B59;
+  color: #ffffff;
+  border-color: #203B59;
+  font-weight: 600;
+}
