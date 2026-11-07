@@ -10,13 +10,12 @@ listing:
       - "posts/*.qmd"
     type: default
     image: false
-    sort: false
+    sort: "date desc"
     max-items: 5
-    fields: [categories, title, description]
+    fields: [categories, title, description, date]
     filter-ui: false
     sort-ui: false
     page-size: 5
-
 ---
 
 
