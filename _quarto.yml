@@ -1,5 +1,7 @@
 project:
   type: website
+  resources:
+    - google6e7753211e27f6eb.html
 
 website:
   title: "People in Context"
