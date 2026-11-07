@@ -1,19 +1,22 @@
-
 ---
 title: "Insights"
 ---
 
-해외 HR 연구를 읽고, 그 의미와 시사점을 탐색합니다.
+HR Analytics 연구를 읽고, 주요 내용과 시사점을 발굴합니다.
+
 
 ---
 
-### [02. 성과 데이터의 투명성과 행동의 변화](posts/performance-data-transparency.qmd)
+### 02. 성과 데이터의 투명성과 행동의 변화
 
 업무시간 데이터의 직접 공개는 직원의 행동과 관리자의 역할을 어떻게 바꾸는가? 미국 현장 실험을 통해 데이터 투명성이 업무시간 배분에 미친 영향을 살펴봅니다.
 
+[원문 읽기](posts/performance-data-transparency.qmd){style="font-size: 1rem;"}
+
 ---
 
-### [01. AI와 협업의 재구성](posts/ai-collaboration.qmd)
+### 01. AI와 협업의 재구성
 
-생성형 AI는 인간의 협업을 대체할 수 있을까? 해외 실증연구를 통해 AI와 인간의 협업 방식, 팀 구성, 조직 설계에
-대한 시사점을 살펴봅니다.
+생성형 AI는 인간의 협업을 대체할 수 있을까? 해외 실증연구를 통해 AI와 인간의 협업 방식, 팀 구성, 조직 설계에 대한 시사점을 살펴봅니다.
+
+[원문 읽기](posts/ai-collaboration.qmd){style="font-size: 1rem;"}
