@@ -5,6 +5,7 @@ project:
 
 website:
   title: "People in Context"
+  site-url: "https://yimhyehwa.github.io/People-in-context/"
   navbar:
     logo: pic-logo.svg
     logo-alt: "piC - People in Context"
