@@ -12,7 +12,7 @@ title-block-banner: false
 
 ### 데이터와 연구를 통해 사람과 조직을 이해합니다.
 
-PiC는 HR Analytics에 관한 지식과 연구를 탐구하고, 유용한 지식을 공유하는 독립 저널입니다.
+PiC는 HR Analytics에 관한 지식과 연구를 탐구하고, 유용한 정보를 공유하는 독립 저널입니다.
 
 :::
 
