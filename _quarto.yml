@@ -14,8 +14,8 @@ website:
         text: Learn
       - href: insights.qmd
         text: Insights
-      - href: Metrics.qmd
-        text: Metrics
+      - href: Trends.qmd
+        text: Trends
       - href: about.qmd
         text: About
 

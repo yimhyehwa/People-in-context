@@ -589,3 +589,11 @@ body:not(:has(.pic-hero)):not(:has(.pic-about))
   border-color: #203B59;
   font-weight: 600;
 }
+/* PiC article — primary category badge */
+#title-block-header .quarto-categories
+.quarto-category:first-child {
+  background-color: #203B59;
+  color: #ffffff;
+  border-color: #203B59;
+  font-weight: 600;
+}

@@ -83,7 +83,7 @@ PEOPLE IN CONTEXT · HR ANALYTICS JOURNAL
 
 ::: {.pic-latest}
 
-## Latest from PiC
+## Recent Articles
 
 ::: {#pic-latest-listing}
 **INSIGHTS**
@@ -109,15 +109,15 @@ s
 
 ### Insights
 
-해외 HR 연구를 읽고, 그 의미와 시사점을 탐색합니다.
+해외 HR 연구를 읽고 그 의미와 시사점 탐색
 
 [Insights 살펴보기](insights.qmd)
 
-### Metrics
+### Trends
 
-HR 지표의 정의와 측정 기준을 살펴보는 가이드
+국내외 주요 HR 동향 및 주요 데이터 소개
 
-[Metrics 살펴보기](metrics.qmd)
+[Trends 살펴보기](trends.qmd)
 
 ### About
 
