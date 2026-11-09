@@ -1,7 +1,7 @@
 ---
 title: "인재를 보호하는 계약, 어디까지 필요한가?"
 subtitle: "OECD 2026이 보여준 한국의 경업금지약정과 인재 이동성"
-date: 2026-11-08
+date: "2026-11-08T22:43:23+09:00"
 lang: ko
 categories:
   - TRENDS
