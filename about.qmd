@@ -1,4 +1,3 @@
-
 ---
 title: "About"
 title-block-banner: false
@@ -15,6 +14,140 @@ title-block-banner: false
 PiC는 HR Analytics에 관한 지식과 연구를 탐구하고, 유용한 정보를 공유하는 독립 저널입니다.
 
 :::
+
+<!-- Our Approach: self-contained, responsive, scoped to this page -->
+<style>
+.pic-about .pic-approach {
+  box-sizing: border-box;
+  max-width: 1100px;
+  margin: 2.1rem auto 2.7rem;
+  padding: clamp(1.25rem, 3vw, 2.5rem);
+  background: #f8fafc;
+  border: 1px solid #dce3eb;
+  border-radius: 20px;
+  color: #142b46;
+}
+.pic-about .pic-approach, .pic-about .pic-approach * { box-sizing: border-box; }
+.pic-about .pic-approach-eyebrow {
+  margin: 0 0 .7rem;
+  color: #547da3;
+  font-size: .78rem;
+  font-weight: 700;
+  letter-spacing: .09em;
+}
+.pic-about .pic-approach-title {
+  margin: 0 0 .65rem;
+  color: #142b46;
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+  font-weight: 750;
+  line-height: 1.45;
+  overflow-wrap: keep-all;
+}
+.pic-about .pic-approach-subtitle {
+  margin: 0 0 1.6rem;
+  color: #4b6078;
+  font-size: clamp(.95rem, 1.3vw, 1.08rem);
+  line-height: 1.65;
+}
+.pic-about .pic-approach-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+.pic-about .pic-approach-card {
+  min-width: 0;
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr);
+  grid-template-rows: auto 1fr;
+  column-gap: 14px;
+  row-gap: 0;
+  align-items: start;
+  padding: 22px 17px;
+  border: 1px solid #c5d2e1;
+  border-radius: 12px;
+  background: #fff;
+}
+.pic-about .pic-approach-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  width: 52px;
+  height: 52px;
+  border-radius: 11px;
+  background: #eaf0f7;
+  color: #142b46;
+}
+.pic-about .pic-approach-icon svg { width: 30px; height: 30px; stroke: currentColor; stroke-width: 1.8; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.pic-about .pic-approach-name {
+  margin: 0 0 .85rem;
+  color: #142b46;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  font-weight: 700;
+  line-height: 1.15;
+}
+.pic-about .pic-approach-card-body {
+  grid-column: 2;
+  grid-row: 2;
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  gap: .55rem;
+  min-width: 0;
+}
+.pic-about .pic-approach-message {
+  margin: 0;
+  color: #142b46;
+  font-weight: 700;
+  font-size: .94rem;
+  line-height: 1.55;
+  word-break: keep-all;
+}
+.pic-about .pic-approach-detail {
+  margin: 0;
+  color: #52677e;
+  font-size: .83rem;
+  line-height: 1.6;
+  word-break: keep-all;
+}
+@media (max-width: 860px) {
+  .pic-about .pic-approach-cards { grid-template-columns: 1fr; }
+  .pic-about .pic-approach-card { grid-template-columns: 52px minmax(0, 1fr); padding: 18px; }
+  .pic-about .pic-approach-name { margin-bottom: .55rem; }
+}
+@media (max-width: 520px) {
+  .pic-about .pic-approach { margin: 1.6rem auto 2rem; padding: 1.1rem; border-radius: 16px; }
+  .pic-about .pic-approach-card { column-gap: 12px; padding: 16px 13px; }
+  .pic-about .pic-approach-name { font-size: 1.45rem; }
+}
+</style>
+
+```{=html}
+<div class="pic-approach" aria-labelledby="pic-approach-heading">
+  <p class="pic-approach-eyebrow">PEOPLE IN CONTEXT · OUR APPROACH</p>
+  <h2 class="pic-approach-title" id="pic-approach-heading">질문에서 시작해, 근거를 이해하고, 해석으로 나아갑니다.</h2>
+  <p class="pic-approach-subtitle">세 가지 관점으로 사람과 조직을 읽습니다.</p>
+  <div class="pic-approach-cards">
+    <div class="pic-approach-card">
+      <span class="pic-approach-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M16 27c-4.2-2.7-8.7-3.3-13-2V5c5-1.3 9-.7 13 2v20Zm0 0c4.2-2.7 8.7-3.3 13-2V5c-5-1.3-9-.7-13 2v20Z"/></svg></span>
+      <h3 class="pic-approach-name">Learn</h3>
+      <div class="pic-approach-card-body"><p class="pic-approach-message">분석의 기초를 이해하다</p><p class="pic-approach-detail">통계 · 방법론 · 실습</p></div>
+    </div>
+    <div class="pic-approach-card">
+      <span class="pic-approach-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="m17 4 5 5-4 4-5-5 4-4Zm-5 5-6 7 6 6 7-7M5 27h23M15 21a8 8 0 0 1 9 6M9 24l-3 3"/></svg></span>
+      <h3 class="pic-approach-name">Insights</h3>
+      <div class="pic-approach-card-body"><p class="pic-approach-message">연구의 근거를 읽다</p><p class="pic-approach-detail">실증연구 · 설계 · 해석</p></div>
+    </div>
+    <div class="pic-approach-card">
+      <span class="pic-approach-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M4 25V19m7 6v-9m7 9V12m7 13V7M4 15l8-6 6 3 9-9m-7 0h7v7"/></svg></span>
+      <h3 class="pic-approach-name">Trends</h3>
+      <div class="pic-approach-card-body"><p class="pic-approach-message">변화의 의미를 묻다</p><p class="pic-approach-detail">HR 동향 · 쟁점 · 시사점</p></div>
+    </div>
+  </div>
+</div>
+```
 
 ## What We Cover
 
