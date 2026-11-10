@@ -17,7 +17,6 @@ execute:
   echo: false
 ---
 
-![한국의 경업금지약정 적용 현황을 보여주는 PiC Core Visual](../assets/images/PiC_Trends_002_Approved_Alternate_Core.png)
 
 ## Key Takeaways
 
@@ -30,6 +29,8 @@ execute:
 회사를 떠난 직원이 일정 기간 경쟁기업에 취업하거나 경쟁 사업을 하지 못하도록 제한하는 계약이 있다. **경업금지약정(Non-compete clause)**이다. 기업은 영업비밀이나 고객관계, 교육·투자에 따른 이익을 지키기 위해 이런 약정을 활용할 수 있다. 하지만 직원에게는 퇴직 후 어디에서 일할 수 있는지와 직결되는 문제다.
 
 OECD와 보코니대학교의 2025년 조사에서 한국 기업들의 응답을 바탕으로 추정한 민간부문 근로자의 약정 적용 비율은 **25~35%**였다. 근로자 조사에서는 **17%가 ‘확실히 적용된다’**, 별도의 **31%가 ‘아마 적용될 것’**이라고 답했다. 두 조사는 표본과 응답 기준이 달라 같은 적용률로 직접 비교할 수 없다. 이 비율을 법적 효력이 인정된 계약의 비율로 해석해서도 안 된다.
+
+![한국의 경업금지약정 적용 현황을 보여주는 PiC Core Visual](../assets/images/PiC_Trends_002_Approved_Alternate_Core.png)
 
 ## 02. What Does the Data Say? — 계약은 누구에게까지 적용되는가?
 
