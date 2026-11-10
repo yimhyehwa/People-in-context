@@ -2,6 +2,8 @@ project:
   type: website
   resources:
     - google6e7753211e27f6eb.html
+    - assets/images/PiC_Trends_003_Core_Visual.png
+    - assets/images/PiC_Trends_003_Executive_Dashboard.png
 
 website:
   title: "People in Context"
