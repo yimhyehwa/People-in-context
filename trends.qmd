@@ -3,13 +3,8 @@ title: "Trends"
 listing:
   - id: trends-listing
     contents:
-      - "posts/*.qmd"
-      - "!posts/ai-collaboration.qmd"
-      - "!posts/central-tendency.qmd"
-      - "!posts/dispersion.qmd"
-      - "!posts/manager-upward-feedback.qmd"
-      - "!posts/performance-data-transparency.qmd"
-      - "!posts/population-sample.qmd"
+      - "posts/PiC_Trends_*.qmd"
+      - "posts/manager-engagement-trends.qmd"
     type: default
     sort: "date desc"
     fields: [categories, title, description, date]
@@ -20,5 +15,45 @@ listing:
 
 국내외 주요 HR 동향을 발굴하여 조직과 인재관리의 변화를 살펴봅니다.
 
+<div class="pic-trends-marker" hidden></div>
+
 ::: {#trends-listing}
 :::
+
+
+```{=html}
+<script>
+/* Adds an actual read link to each Trends entry without changing post URLs.
+   Idempotent for Quarto listing refreshes. */
+(function () {
+  function addReadLinks() {
+    document.querySelectorAll('.quarto-listing-default .quarto-post').forEach(function (post) {
+      if (post.querySelector('.pic-entry-read')) return;
+      var titleLink = post.querySelector('.listing-title a[href]');
+      var body = post.querySelector('.body');
+      if (!titleLink || !body) return;
+      var link = document.createElement('a');
+      link.className = 'pic-entry-read';
+      link.href = titleLink.getAttribute('href');
+      link.textContent = '원문 읽기';
+      body.appendChild(link);
+    });
+  }
+  function initialize() {
+    if (!document.querySelector('.pic-trends-marker')) return;
+    addReadLinks();
+    var listing = document.querySelector('#quarto-listing-container-default') ||
+                  document.querySelector('.quarto-listing-container') ||
+                  document.querySelector('main.content');
+    if (listing) {
+      new MutationObserver(addReadLinks).observe(listing, {childList: true, subtree: true});
+    }
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initialize, {once: true});
+  } else {
+    initialize();
+  }
+})();
+</script>
+```

@@ -1,11 +1,26 @@
-
 ---
 title: "Insights"
 ---
 
 HR Analytics 연구를 읽고, 주요 내용과 시사점을 발굴합니다.
 
----
+::: {.pic-journal-insights}
+
+::: {.pic-journal-entry}
+
+<div class="pic-entry-tags"><span class="pic-entry-date">2026-11-11</span> &nbsp;·&nbsp; #조직문화 &nbsp; #기업성과</div>
+
+### 04. 경영진과 직원이 인식하는 조직문화의 차이는 기업 성과와 어떤 관계가 있는가
+
+경영진과 직원의 조직문화 인식 차이가 규제 벌금, 운영위험, 장기 투자자 가치와 어떤 관계를 보이는지 미국 상장기업 실증연구를 통해 살펴봅니다.
+
+[원문 읽기](posts/insights-04-culture-gap.qmd){style="font-size: 1rem;"}
+
+:::
+
+::: {.pic-journal-entry}
+
+<div class="pic-entry-tags"><span class="pic-entry-date">2026-11-08</span> &nbsp;·&nbsp; #상향평가 &nbsp; #리더십</div>
 
 ### 03. 상향 평가가 관리자 행동 및 팀 성과에 미치는 영향
 
@@ -13,7 +28,11 @@ HR Analytics 연구를 읽고, 주요 내용과 시사점을 발굴합니다.
 
 [원문 읽기](posts/manager-upward-feedback.qmd){style="font-size: 1rem;"}
 
----
+:::
+
+::: {.pic-journal-entry}
+
+<div class="pic-entry-tags"><span class="pic-entry-date">2026-11-07</span> &nbsp;·&nbsp; #데이터투명성 &nbsp; #조직행동</div>
 
 ### 02. 성과 데이터의 투명성과 행동의 변화
 
@@ -21,10 +40,18 @@ HR Analytics 연구를 읽고, 주요 내용과 시사점을 발굴합니다.
 
 [원문 읽기](posts/performance-data-transparency.qmd){style="font-size: 1rem;"}
 
----
+:::
+
+::: {.pic-journal-entry}
+
+<div class="pic-entry-tags"><span class="pic-entry-date">2026-11-07</span> &nbsp;·&nbsp; #생성형AI &nbsp; #협업</div>
 
 ### 01. AI와 협업의 재구성
 
 생성형 AI는 인간의 협업을 대체할 수 있을까? 해외 실증연구를 통해 AI와 인간의 협업 방식, 팀 구성, 조직 설계에 대한 시사점을 살펴봅니다.
 
 [원문 읽기](posts/ai-collaboration.qmd){style="font-size: 1rem;"}
+
+:::
+
+:::

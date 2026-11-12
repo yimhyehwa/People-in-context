@@ -597,3 +597,124 @@ body:not(:has(.pic-hero)):not(:has(.pic-about))
   border-color: #203B59;
   font-weight: 600;
 }
+
+/* 13. PiC journal listings — scoped to the two listing pages only.
+   This replaces all previous Trends listing overrides. */
+body:has(.pic-trends-marker) .quarto-listing-default .quarto-post {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  gap: 0 !important;
+  padding: 28px 0 32px !important;
+  margin: 0 !important;
+  border-bottom: 1px solid var(--pic-line);
+}
+body:has(.pic-trends-marker) .quarto-listing-default .quarto-post .thumbnail {
+  display: none !important;
+}
+body:has(.pic-trends-marker) .quarto-listing-default .quarto-post > .body,
+body:has(.pic-trends-marker) .quarto-listing-default .quarto-post > .metadata {
+  flex: none !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  margin: 0 !important;
+}
+body:has(.pic-trends-marker) .quarto-listing-default .quarto-post > .metadata {
+  order: -1;
+  margin-bottom: 4px !important;
+  font-size: .79rem;
+  color: var(--pic-muted);
+}
+body:has(.pic-trends-marker) .quarto-listing-default .quarto-post > .body {
+  display: flex;
+  flex-direction: column;
+}
+body:has(.pic-trends-marker) .quarto-listing-default .quarto-post .listing-categories {
+  order: -1;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 0 0 9px !important;
+}
+body:has(.pic-trends-marker) .quarto-listing-default .quarto-post .listing-category {
+  font-size: .79rem;
+  color: var(--pic-muted);
+  border: 0 !important;
+  background: none !important;
+  padding: 0 !important;
+}
+body:has(.pic-trends-marker) .quarto-listing-default .quarto-post .listing-category::before { content: '#'; }
+/* Source category 1 is TRENDS; show only the next two representative tags. */
+body:has(.pic-trends-marker) .quarto-listing-default .quarto-post .listing-category:first-child,
+body:has(.pic-trends-marker) .quarto-listing-default .quarto-post .listing-category:nth-child(n+4) {
+  display: none !important;
+}
+body:has(.pic-trends-marker) .quarto-listing-default .quarto-post .listing-title {
+  order: 0;
+  color: var(--pic-navy);
+  font-size: 1.4rem;
+  font-weight: 700 !important;
+  line-height: 1.5;
+  margin: 0 0 12px !important;
+}
+body:has(.pic-trends-marker) .quarto-listing-default .quarto-post .listing-description {
+  order: 1;
+  color: var(--pic-text);
+  font-size: .96rem;
+  line-height: 1.8;
+  margin: 0 !important;
+}
+/* Insights has hand-curated titles and summaries; keep them unchanged. */
+.pic-journal-insights .pic-journal-entry {
+  padding: 28px 0 32px;
+  border-bottom: 1px solid var(--pic-line);
+}
+.pic-journal-insights .pic-journal-entry h3 {
+  margin: 0 0 12px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.pic-journal-insights .pic-journal-entry p {
+  margin: 0 0 13px;
+  font-size: .96rem;
+  line-height: 1.8;
+}
+.pic-journal-insights .pic-journal-entry .pic-entry-tags {
+  font-size: .79rem;
+  color: var(--pic-muted);
+  margin-bottom: 9px;
+}
+.pic-journal-insights .pic-journal-entry p:last-child { margin-bottom: 0; }
+@media (max-width: 768px) {
+  body:has(.pic-trends-marker) .quarto-listing-default .quarto-post,
+  .pic-journal-insights .pic-journal-entry {
+    padding: 19px 0 23px !important;
+  }
+  body:has(.pic-trends-marker) .quarto-listing-default .quarto-post .listing-title,
+  .pic-journal-insights .pic-journal-entry h3 { font-size: 1.2rem; }
+}
+
+/* 14. Journal listing final alignment and real read links. */
+body:has(.pic-trends-marker) .quarto-listing-default .quarto-post .listing-title,
+body:has(.pic-trends-marker) .quarto-listing-default .quarto-post .listing-title a,
+.pic-journal-insights .pic-journal-entry h3,
+.pic-journal-insights .pic-journal-entry h3 a {
+  color: var(--pic-navy) !important;
+  font-weight: 700 !important;
+  text-decoration: none;
+}
+body:has(.pic-trends-marker) .quarto-listing-default .quarto-post .pic-entry-read {
+  display: inline-block;
+  align-self: flex-start;
+  margin-top: 13px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #42627e;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+body:has(.pic-trends-marker) .quarto-listing-default .quarto-post .pic-entry-read:hover {
+  color: var(--pic-navy);
+}
