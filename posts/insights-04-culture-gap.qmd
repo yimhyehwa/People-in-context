@@ -2,6 +2,7 @@
 title: "경영진과 직원이 인식하는 조직문화의 차이는 기업 성과와 어떤 관계가 있는가"
 subtitle: "조직문화의 불일치와 기업의 경영위험·장기적 가치를 분석한 실증연구"
 description: "경영진과 직원의 조직문화 인식 차이가 규제 벌금, 운영위험, 장기 투자자 가치와 어떤 관계를 보이는지 미국 상장기업 실증연구를 통해 살펴봅니다."
+date: 2026-11-11
 categories: ["INSIGHTS", "조직문화", "HR Analytics", "조직문화 진단", "경영위험", "기업성과"]
 title-block-style: default
 toc: false
