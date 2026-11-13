@@ -794,3 +794,34 @@ body:has(.pic-trends-marker) .quarto-listing-default .quarto-post .listing-descr
     font-size: 1.2rem;
   }
 }
+
+
+/* 18. PiC article reading width — applies only to dated article pages.
+   Leaves homepage, About, Learn/Insights/Trends index layouts untouched. */
+body:has(#title-block-header .quarto-title-meta) #quarto-content main.content {
+  width: 100%;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 0;
+}
+
+/* Keep long Korean prose readable without splitting syllable blocks. */
+body:has(#title-block-header .quarto-title-meta) #quarto-content main.content p,
+body:has(#title-block-header .quarto-title-meta) #quarto-content main.content li {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+/* Figures stay within the reading column while retaining aspect ratio. */
+body:has(#title-block-header .quarto-title-meta) #quarto-content main.content img {
+  max-width: 100%;
+  height: auto;
+}
+/* Homepage Recent Articles — Korean word-aware wrapping */
+.pic-latest .quarto-listing-default .quarto-post .listing-description,
+.pic-latest .quarto-listing-default .quarto-post .listing-title,
+.pic-latest .quarto-listing-default .quarto-post .listing-title a {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
