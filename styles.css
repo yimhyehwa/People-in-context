@@ -718,3 +718,79 @@ body:has(.pic-trends-marker) .quarto-listing-default .quarto-post .pic-entry-rea
 body:has(.pic-trends-marker) .quarto-listing-default .quarto-post .pic-entry-read:hover {
   color: var(--pic-navy);
 }
+
+
+/* 15. Journal listing reading width — local preview candidate.
+   Scope only the Insights and Trends index pages, not article bodies. */
+.pic-journal-insights,
+body:has(.pic-trends-marker) .quarto-listing-default {
+  width: 100%;
+  max-width: 760px;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+/* Keep index summaries visually neutral; article-body emphasis is unchanged. */
+.pic-journal-insights .pic-journal-entry p strong,
+.pic-journal-insights .pic-journal-entry p b,
+body:has(.pic-trends-marker) .quarto-listing-default .quarto-post .listing-description strong,
+body:has(.pic-trends-marker) .quarto-listing-default .quarto-post .listing-description b {
+  font-weight: 400;
+}
+
+/* 16. Shared Korean word-aware wrapping on journal index summaries. */
+.pic-journal-insights .pic-journal-entry p,
+.pic-journal-learn .pic-journal-entry p,
+body:has(.pic-trends-marker) .quarto-listing-default .quarto-post .listing-description {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+/* 17. Learn journal index — no dates/tags; sequence numbers are the hierarchy. */
+.pic-journal-learn {
+  width: 100%;
+  max-width: 760px;
+  margin-left: 0;
+  margin-right: auto;
+}
+.pic-journal-learn .pic-journal-entry {
+  padding: 28px 0 32px;
+  border-bottom: 1px solid var(--pic-line);
+}
+.pic-journal-learn .pic-journal-entry:last-child {
+  border-bottom: 0;
+}
+.pic-journal-learn .pic-journal-entry h3 {
+  margin: 0 0 12px;
+  color: var(--pic-navy);
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.pic-journal-learn .pic-journal-entry p {
+  margin: 0 0 13px;
+  color: var(--pic-text);
+  font-size: .96rem;
+  line-height: 1.8;
+}
+.pic-journal-learn .pic-journal-entry p strong,
+.pic-journal-learn .pic-journal-entry p b {
+  font-weight: 400;
+}
+.pic-journal-learn .pic-journal-entry .pic-entry-read {
+  font-size: 1rem;
+  color: #42627e;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.pic-journal-learn .pic-journal-entry .pic-entry-read:hover {
+  color: var(--pic-navy);
+}
+@media (max-width: 768px) {
+  .pic-journal-learn .pic-journal-entry {
+    padding: 19px 0 23px;
+  }
+  .pic-journal-learn .pic-journal-entry h3 {
+    font-size: 1.2rem;
+  }
+}
