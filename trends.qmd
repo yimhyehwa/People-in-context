@@ -1,3 +1,4 @@
+
 ---
 title: "Trends"
 listing:
@@ -17,6 +18,48 @@ listing:
 국내외 주요 HR 동향을 발굴하여 조직과 인재관리의 변화를 살펴봅니다.
 
 <span class="pic-trends-marker" hidden></span>
+
+```{=html}
+<script>
+(function () {
+  function addReadLinks() {
+    const posts = document.querySelectorAll(
+      'body:has(.pic-trends-marker) .quarto-listing-default .quarto-post'
+    );
+
+    posts.forEach(function (post) {
+      if (post.querySelector('.pic-entry-read')) return;
+
+      const titleLink = post.querySelector('.listing-title a[href]');
+      const description = post.querySelector('.listing-description');
+      const body = post.querySelector('.body');
+
+      if (!titleLink || !body) return;
+
+      const link = document.createElement('a');
+      link.className = 'pic-entry-read';
+      link.href = titleLink.href;
+      link.textContent = '원문 읽기';
+
+      if (description) {
+        description.insertAdjacentElement('afterend', link);
+      } else {
+        body.appendChild(link);
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', addReadLinks);
+  window.addEventListener('load', addReadLinks);
+
+  const observer = new MutationObserver(addReadLinks);
+  observer.observe(document.documentElement, {
+    childList: true,
+    subtree: true
+  });
+})();
+</script>
+```
 
 ::: {#trends-listing}
 :::
